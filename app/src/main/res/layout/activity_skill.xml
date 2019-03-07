@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".Controllor.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -43,26 +43,27 @@
         <ToggleButton
                 android:text="@string/beginner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton4" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/beginnerSkillBtn" android:layout_weight="1"
                 android:layout_marginEnd="16dp" android:background="@drawable/swoosh_toggle"
                 android:textColor="@android:color/white" android:textOff="@string/beginner"
                 android:textOn="@string/beginner"
-                android:textSize="18sp"/>
+                android:textSize="18sp" android:onClick="onBeginnerClick"/>
         <ToggleButton
                 android:text="@string/baller"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton5" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/ballerSkillBtn" android:layout_weight="1"
                 android:layout_marginStart="16dp" android:background="@drawable/swoosh_toggle"
                 android:textColor="@android:color/white" android:textOff="@string/baller"
                 android:textOn="@string/baller"
-                android:textSize="18sp"/>
+                android:textSize="18sp" android:onClick="onBallerClick"/>
     </LinearLayout>
     <Button
             android:text="@string/finish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:id="@+id/finishSkillBtn" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" android:background="@drawable/swoosh_toggle"
-            android:textColor="@android:color/white" android:textSize="18sp"/>
+            android:textColor="@android:color/white" android:textSize="18sp" android:onClick="onFinishClick"/>
 </android.support.constraint.ConstraintLayout>
